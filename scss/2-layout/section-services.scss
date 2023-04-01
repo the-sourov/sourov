@@ -1,0 +1,37 @@
+.section-services {
+  background-color: var(--color-primary);
+  background-image: url("./../images/circuit-bg.svg");
+  padding: 20rem 2rem;
+
+  &__card {
+    background-color: var(--color-secondary);
+    height: 43.33rem;
+    padding: 2rem;
+    transition: all 0.4s;
+    width: 43.33rem;
+
+    @include border(var(--color-black));
+
+    &:hover {
+      @include box-shadow(var(--color-black));
+    }
+
+    ::selection {
+      background-color: var(--color-primary);
+      color: var(--color-black);
+    }
+
+    &__container {
+      align-items: center;
+      display: flex;
+      margin-bottom: 2rem;
+    }
+
+    &__paragraph {
+      color: var(--color-black);
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+  }
+}

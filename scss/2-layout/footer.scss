@@ -1,0 +1,46 @@
+.footer {
+  background-color: var(--color-black-80);
+  padding: 2rem;
+
+  &__container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: $max-width;
+
+    @media only screen and (max-width: 830px) {
+      flex-direction: column;
+      & > *:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__link {
+    &,
+    &:link,
+    &:active,
+    &:visited {
+      display: inline-block;
+      height: 3rem;
+      text-decoration: none;
+      width: 3rem;
+    }
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &__icon {
+    fill: var(--color-white-80);
+    height: 100%;
+    transition: all 0.4s;
+    width: 100%;
+  }
+
+  &__link:hover > &__icon {
+    fill: var(--color-white);
+  }
+}

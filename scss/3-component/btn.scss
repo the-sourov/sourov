@@ -1,0 +1,29 @@
+.btn-primary {
+  &,
+  &:link,
+  &:active,
+  &:visited {
+    background-color: var(--color-secondary);
+    color: var(--color-black);
+    display: inline-block;
+    font-family: inherit;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.4s;
+
+    @include border(var(--color-black));
+    @include box-shadow(var(--color-black));
+  }
+
+  &:hover {
+    background-color: var(--color-black);
+    cursor: pointer;
+    color: var(--color-white);
+
+    @include box-shadow(var(--color-secondary));
+  }
+}

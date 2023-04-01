@@ -1,0 +1,9 @@
+// ====================> Border mixin requires the border color
+@mixin border($border-color) {
+  border: 2px solid $border-color;
+}
+
+// ====================> Box shadow mixin requires the shadow color
+@mixin box-shadow($shadow-color) {
+  box-shadow: 0.5rem 0.5rem $shadow-color;
+}

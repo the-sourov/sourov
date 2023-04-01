@@ -1,0 +1,14 @@
+.logo {
+  &,
+  &:link,
+  *:active,
+  *:visited {
+    display: inline-block;
+    width: 20rem;
+  }
+
+  &__content {
+    display: inline-block;
+    width: 100%;
+  }
+}

@@ -1,0 +1,17 @@
+.section-contact {
+  background-color: var(--color-primary);
+  background-image: url("./../images/circuit-bg.svg");
+  padding: 20rem 2rem;
+
+  .row {
+    align-items: flex-start;
+
+    @media only screen and (max-width: 830px) {
+      align-items: center;
+    }
+  }
+
+  .col-1-of-2:nth-child(2) > * {
+    margin-bottom: 5rem;
+  }
+}

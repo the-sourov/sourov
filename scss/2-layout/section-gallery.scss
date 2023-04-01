@@ -1,0 +1,15 @@
+.section-gallery {
+  padding: 0 2rem;
+
+  .col-1-of-2:nth-child(1) {
+    background-color: var(--color-secondary);
+    padding: 2rem;
+    @include border(var(--color-black));
+    @include box-shadow(var(--color-black));
+  }
+
+  &__image {
+    display: inline-block;
+    width: 100%;
+  }
+}

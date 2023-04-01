@@ -1,0 +1,29 @@
+.icon-primary {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 10rem;
+  max-height: 10rem;
+  min-width: 10rem;
+  max-width: 10rem;
+  @include border(var(--color-black));
+
+  &__content {
+    fill: var(--color-black);
+    height: 60%;
+    width: 60%;
+  }
+
+  &--color-primary {
+    background-color: var(--color-primary);
+  }
+
+  &--color-secondary {
+    background-color: var(--color-secondary);
+  }
+}
+
+.icon-info {
+  align-items: center;
+  display: flex;
+}

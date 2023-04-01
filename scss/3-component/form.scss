@@ -1,0 +1,75 @@
+.form {
+  background-color: var(--color-white);
+  display: block;
+  padding: 2rem;
+  @include border(var(--color-black));
+  @include box-shadow(var(--color-black));
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    & > * {
+      flex: 0 0 49%;
+    }
+  }
+
+  &__input-group {
+    display: block;
+    margin-bottom: 2.5rem;
+  }
+
+  &__input {
+    background-color: transparent;
+    color: var(--color-black-80);
+    display: block;
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    transition: all 0.4s;
+    width: 100%;
+    @include border(var(--color-black-80));
+
+    &::-webkit-input-placeholder {
+      color: var(--color-black-80);
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      display: none;
+    }
+
+    &:focus {
+      outline: none;
+      @include box-shadow(var(--color-black-80));
+    }
+
+    &:focus:invalid {
+      @include border(var(--color-secondary));
+    }
+
+    &--message {
+      min-height: 20rem;
+      min-width: 100%;
+      max-width: 100%;
+      transition: none;
+    }
+  }
+
+  &__label {
+    color: var(--color-black-80);
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-left: 2.2rem;
+    transition: all 0.4s;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    transform: translateY(-4.6rem);
+    visibility: hidden;
+  }
+}

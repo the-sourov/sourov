@@ -1,0 +1,26 @@
+// ====================> Helper files
+@import "./0-helper/color";
+@import "./0-helper/mixin";
+@import "./0-helper/variables";
+@import "./0-helper/utility";
+
+// ====================> Base files
+@import "./1-base/base";
+@import "./1-base/typography";
+
+// ====================> Layout files
+@import "./2-layout/grid-system";
+@import "./2-layout/header";
+@import "./2-layout/nav-bar";
+@import "./2-layout/section-hero";
+@import "./2-layout/section-about";
+@import "./2-layout/section-services";
+@import "./2-layout/section-gallery";
+@import "./2-layout/section-contact";
+@import "./2-layout/footer";
+
+// ====================> Component files
+@import "./3-component/logo";
+@import "./3-component/btn";
+@import "./3-component/icons";
+@import "./3-component/form";

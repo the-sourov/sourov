@@ -1,0 +1,74 @@
+// ====================> Google fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.heading-primary {
+  text-align: center;
+
+  &--sub {
+    color: var(--color-black-80);
+    display: block;
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 2rem;
+    }
+  }
+
+  &--main {
+    color: var(--color-black);
+    display: inline-block;
+    font-size: 8rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 4rem;
+    }
+  }
+
+  &--typing {
+    color: var(--color-secondary);
+    display: inline-block;
+    text-transform: uppercase;
+  }
+}
+
+// ====================> Heading secondary
+.heading-secondary {
+  color: var(--color-black);
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+// ====================> Heading tertiary
+.heading-tertiary {
+  color: var(--color-black);
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  &--text-uppercase {
+    text-transform: uppercase;
+  }
+}
+
+// ====================> Paragraph
+.paragraph {
+  color: var(--color-black);
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+// ====================> Copyright text
+.copyright-text {
+  color: var(--color-white-80);
+  font-size: 2rem;
+  letter-spacing: 1px;
+}

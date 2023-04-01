@@ -1,0 +1,19 @@
+.section-hero {
+  background-color: var(--color-primary);
+  background-image: url("./../images/circuit-bg.svg");
+  height: 100vh;
+  padding: 0 2rem;
+  position: relative;
+
+  &__container {
+    left: 0%;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

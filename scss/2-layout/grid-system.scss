@@ -1,0 +1,36 @@
+.row {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: $max-width;
+
+  &:not(:last-child) {
+    margin-bottom: 10rem;
+  }
+
+  @media only screen and (max-width: 830px) {
+    flex-direction: column;
+  }
+}
+
+[class^="col-"] {
+  &:not(:last-child) {
+    margin-right: 5rem;
+  }
+
+  @media only screen and (max-width: 830px) {
+    margin-right: 0 !important;
+    margin-bottom: 10rem;
+  }
+}
+
+.col-1-of-2 {
+  flex: 1;
+  max-width: calc(($max-width - 10rem) / 2);
+}
+
+.col-1-of-3 {
+  flex: 1;
+  width: calc(($max-width - 10rem * 2) / 3);
+}

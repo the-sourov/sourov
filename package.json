@@ -1,0 +1,13 @@
+{
+  "name": "sourov",
+  "version": "1.0.0",
+  "description": "Sourov Biswas official website 🔥.",
+  "scripts": {
+    "compile:scss": "sass --watch ./scss/main.scss ./public/css/style.css"
+  },
+  "author": "Sourov Biswas",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.58.0"
+  }
+}
